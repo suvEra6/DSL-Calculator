@@ -1,6 +1,6 @@
 # DSL Calculator: Unleash Your Inner Mathemagician! ✨
 
-Welcome to **DSL Calculator**, the ultimate Domain-Specific Language (DSL) that lets you solve both simple and mind-bending complex mathematical expressions with ease!
+Welcome to **DSL Calculator**, the Domain-Specific Language (DSL) that lets you solve both simple and complex mathematical expressions with ease!
 
 > _"Math doesn't have to be boring, and neither should your code!"_
 
@@ -21,7 +21,7 @@ Welcome to **DSL Calculator**, the ultimate Domain-Specific Language (DSL) that 
 - Evaluating basic arithmetic like `5 + 3` or `10 / 2`
 - Handling complex expressions with nested parentheses (e.g., `(1+2)*3 - 4/2`)
 - Comparison operators such as `<`, `>`, and `==`
-- Printing expressions in a neat, human-readable format
+- Printing expressions in a neat, readable format
 - Providing robust error handling for division by zero or invalid input
 
 ## Features
@@ -33,15 +33,15 @@ Welcome to **DSL Calculator**, the ultimate Domain-Specific Language (DSL) that 
   Enjoy not only basic arithmetic but also comparison operations (e.g., `<`, `>`, `==`).
 
 - **Error Handling**  
-  Division by zero? Invalid characters? We catch those gremlins and let you know with a smile.
+  Division by zero? Invalid characters? I catch those gremlins and let you know with a smile.
 
 - **Comprehensive Testing**  
-  Unit tests written in Jest ensure that our DSL works like a charm.
+  Unit tests written in Jest ensure that DSL works like a charm.
 
 ## Implementation Approach & AI Usage
 
 1. **Core Implementation (Manually Developed):**  
-   - **AST Nodes:** We created a `NumberNode` for numeric literals and a `BinaryOperationNode` for arithmetic/comparison operations.  
+   - **AST Nodes:** I created a `NumberNode` for numeric literals and a `BinaryOperationNode` for arithmetic/comparison operations.  
    - **Parser:** A recursive descent parser (`parser.ts`) tokenizes and builds the AST for complex expressions.  
    - **Bonus Features:** Comparison operators (`<`, `>`, `==`) and a `print()` method to display expressions.  
 
@@ -49,16 +49,16 @@ Welcome to **DSL Calculator**, the ultimate Domain-Specific Language (DSL) that 
    - The HTML, CSS, and certain UI logic in `index.html` (and portions of `index.ts`) were generated with the assistance of an AI tool.  
 
 3. **Testing & Validation:**  
-   - We wrote a comprehensive test suite using **Jest** to ensure the DSL behaves as expected, including edge cases like division by zero.
+   - I wrote a comprehensive test suite using **Jest** to ensure the DSL behaves as expected, including edge cases like division by zero.
 
 4. **Assumptions:**  
-   - We assume all inputs for arithmetic operations are numeric.  
+   - I assume all inputs for arithmetic operations are numeric.  
    - Division by zero is handled by throwing an error.  
    - Comparison operators expect numeric operands.
 
 5. **Challenge Requirements:**  
    - **Core Implementation of the DSL:** Done with `NumberNode`, `BinaryOperationNode`, and a robust evaluation logic.  
-   - **At Least One Bonus Feature:** We added comparison operators, error handling with descriptive messages, and print functionality.  
+   - **At Least One Bonus Feature:** I added comparison operators, error handling with descriptive messages, and print functionality.  
    - **Comprehensive Test Suite:** Located in `__tests__` with coverage for arithmetic, nested expressions, and error handling.  
    - **README:** Contains approach details, assumptions, and instructions for running the project and tests.
  
@@ -134,7 +134,7 @@ All bundled files will appear in the `dist` folder, ready for deployment.
 
 ## Testing
 
-We use **Jest** to ensure everything works smoothly:
+I use **Jest** to ensure everything works smoothly:
 
 ```bash
 npm test

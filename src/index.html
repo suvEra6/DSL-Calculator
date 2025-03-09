@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSL Calculator with Complex Expression Support</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    /* Form Styles */
+    form {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    form div {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="number"], input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    /* Result Styles */
+    #result {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #333;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>DSL Calculator</h1>
+  <form id="calc-form">
+    <!-- Simple Calculator Inputs -->
+    <div>
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" />
+    </div>
+    <div>
+      <label for="operation">Operation:</label>
+      <select id="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="<"><</option>
+        <option value=">">></option>
+        <option value="==">==</option>
+      </select>
+    </div>
+    <div>
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" />
+    </div>
+    <div style="text-align:center; margin: 20px 0; font-weight: bold;">-- OR --</div>
+    <!-- Complex Expression Input -->
+    <div>
+      <label for="expression">Complex Expression:</label>
+      <input type="text" id="expression" placeholder="e.g., (1+2)*3 - 4/2" />
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="result"></div>
+</body>
+</html>

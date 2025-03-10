@@ -81,12 +81,6 @@ export function parseExpression(input: string): ASTNode {
     return token;
   }
 
-  // Grammar:
-  // expression -> comparison
-  // comparison -> additive (( "==" | "<" | ">" ) additive)*
-  // additive -> multiplicative (( "+" | "-" ) multiplicative)*
-  // multiplicative -> primary (( "*" | "/" ) primary)*
-  // primary -> NUMBER | "(" expression ")"
 
   function parsePrimary(): ASTNode {
     const token = peek();
